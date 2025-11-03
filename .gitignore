@@ -1,0 +1,16 @@
+*.pyc __pycache__/
+.env
+*.log
+__pycache__/
+
+dist/
+app/dist/
+.playwright/
+*.exe
+.env
+app/archive/
+app/BrowserAutomation_mirror/
+BrowserAutomation_mirror/
+.streamlit/
+.vscode/
+app/build/
