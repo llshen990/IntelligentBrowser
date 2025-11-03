@@ -1,4 +1,4 @@
-# BrowserAgent + Anthropic Planner + Streamlit UI
+# BrowserAgent + Anthropic Planner + GUI(PyQt5)
 
 
 ### Update on Sep 15,2025
