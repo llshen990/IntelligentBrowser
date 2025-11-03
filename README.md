@@ -6,9 +6,9 @@ This project is not completed yet, estimated to complete in October,2025.
 
 
 
-A minimal, production‑lean browser automation agent that uses **Playwright** to control the browser and an **Anthropic Claude planner** to decide actions. It ships with an optional **Streamlit chat‑style UI** that shows live steps and gracefully pauses for **CAPTCHA / human verification** (HITL), then resumes when you press **Continue/Enter**.
+A minimal, production‑lean browser automation agent that uses **Playwright** to control the browser and an **Anthropic Claude planner** to decide actions. It ships with an optional **Desktop-style UI(PyQT5)** that shows live steps and gracefully pauses for **CAPTCHA / human verification** (HITL), then resumes when you press **Continue/Enter**.
 
-> **Design goal:** keep your original `browser.py`, `anthropicAgent.py`, and `mytest.py` untouched (or with the smallest possible tweaks). The UI integrates through lightweight callbacks.
+> **Design goal:** keep your original `browser.py`, `anthropicAgent.py`, and `gui_main.py` untouched (or with the smallest possible tweaks). The UI integrates through lightweight callbacks.
 
 ---
 
@@ -28,8 +28,10 @@ A minimal, production‑lean browser automation agent that uses **Playwright** t
 .
 ├─ browser.py                # BrowserAgent and related dataclasses/enums
 ├─ anthropicAgent.py         # Anthropic-based planner (Claude 3.5 Sonnet, beta tool-use)
-├─ mytest.py                 # Minimal integration test entrypoint
-├─ streamlit_app.py          # (Optional) Chat-style UI with HITL pause & resume
+├─ gui_main.py                 # Minimal integration test entrypoint
+├─ utils.py                 # Utility functions for the GUI
+├─ human_pause.py                 # Human pause handler for the GUI
+├─ #streamlit_app.py          # (Optional) Chat-style UI with HITL pause & resume
 ├─ deploy_architecture.png   # High-level deployment diagram
 └─ monitor_architecture.png  # Monitoring / HITL flow diagram
 ```
@@ -45,7 +47,7 @@ If you don’t see `streamlit_app.py` yet, copy the one from the documentation o
   - `playwright`
   - `anthropic`
   - `pillow`
-  - `streamlit` (UI only)
+  - `PyQT5` (GUI)
 
 Install:
 
