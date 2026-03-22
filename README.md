@@ -2,9 +2,6 @@
 
 
 ### Update on Sep 15,2025
-This project is not completed yet, estimated to complete in October,2025.
-
-
 
 A minimal, production‑lean browser automation agent that uses **Playwright** to control the browser and an **Anthropic Claude planner** to decide actions. It ships with an optional **Desktop-style UI(PyQT5)** that shows live steps and gracefully pauses for **CAPTCHA / human verification** (HITL), then resumes when you press **Continue/Enter**.
 
