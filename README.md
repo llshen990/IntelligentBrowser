@@ -125,6 +125,14 @@ This keeps the core agent deterministic and avoids bloating LLM prompts—**toke
 
 ## 🖼 Architecture
 
+### Desktop App Prototype
+A simple PyQt desktop interface was built to support goal input, API key configuration, logging, and HITL pause/resume during browser automation workflows.
+![Agent workflow](./images/gui_screenshot.png)
+
+### Agent workflow
+![Agent workflow](./images/agent_workflow.png)
+
+
 ### Deployment
 ![Deployment](./deploy_architecture.png)
 
